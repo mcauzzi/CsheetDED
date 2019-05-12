@@ -5,11 +5,6 @@ VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterSheet", "CharacterSheet\CharacterSheet.csproj", "{8990455E-42BF-44D9-A621-E6E49539FAB2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D53DA33-4F64-4E3E-88A7-15D662202082}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\Downloads\5cd87e62f4df8d0004000006.csv = ..\..\..\..\Downloads\5cd87e62f4df8d0004000006.csv
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -22,6 +22,7 @@ namespace CharacterSheet
     /// </summary>
     public partial class SpellsList : Window
     {
+        DataTable SpellTable;
         public SpellsList()
         {
             InitializeComponent();
@@ -34,9 +35,9 @@ namespace CharacterSheet
                 // Do any configuration to `CsvReader` before creating CsvDataReader.
                 using (var dr = new CsvDataReader(csv))
                 {
-                    var dt = new DataTable();
-                    dt.Load(dr);
-                    SpellsGrid.DataContext = dt.DefaultView;
+                    SpellTable = new DataTable();
+                    SpellTable.Load(dr);
+                    SpellsGrid.DataContext = SpellTable.DefaultView;
                 }
             }
         }
