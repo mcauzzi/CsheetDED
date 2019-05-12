@@ -24,5 +24,11 @@ namespace CharacterSheet
         {
             InitializeComponent();
         }
+
+        private void SpellsButton_Click(object sender, RoutedEventArgs e)
+        {
+            var form = new SpellsList();
+            form.Show();
+        }
     }
 }
