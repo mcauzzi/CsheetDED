@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="SpellsButton" Content="Button" HorizontalAlignment="Left" Margin="278,172,0,0" VerticalAlignment="Top" Width="75" Click="SpellsButton_Click"/>
+        <Button x:Name="SpellsButton" Content="Lista Spell" HorizontalAlignment="Left" Margin="707,389,0,0" VerticalAlignment="Top" Width="75" Click="SpellsButton_Click"/>
+        <Button x:Name="EquipButton" Content="Equip" HorizontalAlignment="Left" Margin="707,364,0,0" VerticalAlignment="Top" Width="75" Click="EquipButton_Click"/>
 
     </Grid>
 </Window>

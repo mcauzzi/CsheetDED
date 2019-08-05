@@ -10,31 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace CharacterSheet
 {
     /// <summary>
-    /// Logica di interazione per MainWindow.xaml
+    /// Logica di interazione per Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Equipment : Window
     {
-        public MainWindow()
+        //TODO:Aggiungere controlli WPF separatì per ogni tipo di equip
+        public Equipment()
         {
             InitializeComponent();
-        }
-
-        private void SpellsButton_Click(object sender, RoutedEventArgs e)
-        {
-            var form = new SpellsList();
-            form.Show();
-        }
-
-        private void EquipButton_Click(object sender, RoutedEventArgs e)
-        {
-            var form = new Equipment();
-            form.Show();
         }
     }
 }

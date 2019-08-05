@@ -1,0 +1,42 @@
+﻿<Window x:Class="CharacterSheet.Equipment"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CharacterSheet"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Canvas x:Name="HeadSlot" HorizontalAlignment="Left" Margin="357,10,0,0" VerticalAlignment="Top" Width="70" Height="70">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+        <Canvas x:Name="HandsSlot" HorizontalAlignment="Left" Margin="282,160,0,0" VerticalAlignment="Top" Width="70" Height="70">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+        <Canvas x:Name="BodySlot" HorizontalAlignment="Left" Margin="357,85,0,0" VerticalAlignment="Top" Width="70" Height="70">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+        <Canvas x:Name="ShouldersSlot" HorizontalAlignment="Left" Margin="432,85,0,0" VerticalAlignment="Top" Width="70" Height="70">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+        <Canvas x:Name="WaistSlot" HorizontalAlignment="Left" Margin="357,160,0,0" VerticalAlignment="Top" Width="70" Height="70">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+        <Canvas x:Name="WristSlot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Margin="282,85,0,0">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+        <Canvas x:Name="EyesSlot" HorizontalAlignment="Left" Margin="507,10,0,0" VerticalAlignment="Top" Width="70" Height="70">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+        <Canvas x:Name="FeetSlot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="70" Canvas.Left="502" Canvas.Top="10" Margin="357,235,0,0">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+        <Canvas x:Name="RingSlot" HorizontalAlignment="Left" Margin="507,159,0,0" VerticalAlignment="Top" Width="70" Height="70">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+        <Canvas x:Name="NeckSlot" HorizontalAlignment="Left" Margin="507,84,0,0" VerticalAlignment="Top" Width="70" Height="70">
+            <Border BorderBrush="Black" BorderThickness="1" Height="70" Width="70"/>
+        </Canvas>
+
+    </Grid>
+</Window>
