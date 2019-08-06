@@ -7,7 +7,15 @@
         mc:Ignorable="d"
         Title="SpellsList" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="SpellsGrid" ItemsSource="{Binding}" Margin="0,0,0,1"/>
+        <DataGrid x:Name="SpellsGrid" ItemsSource="{Binding}" Margin="0,142,0,1"/>
+        <TextBox x:Name="NameFilterBox" HorizontalAlignment="Left" Height="23" Margin="78,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="LoadEvent"/>
+        <Label x:Name="label" Content="Nome:" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Height="23" Width="63"/>
+        <TextBox x:Name="SchoolFilterBox" HorizontalAlignment="Left" Height="23" Margin="271,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="LoadEvent"/>
+        <Label x:Name="label_Copy" Content="Scuola:" HorizontalAlignment="Left" Margin="203,59,0,0" VerticalAlignment="Top" Height="23" Width="63"/>
+        <TextBox x:Name="LevelMinFilterBox" HorizontalAlignment="Left" Height="23" Margin="517,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="LoadEvent"/>
+        <Label x:Name="label_Copy1" Content="Classe:" HorizontalAlignment="Left" Margin="401,32,0,0" VerticalAlignment="Top" Height="23" Width="116"/>
+        <ComboBox x:Name="classComboBox" HorizontalAlignment="Left" Margin="517,32,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ClassComboBox_SelectionChanged"/>
+        <Label x:Name="label_Copy2" Content="Livello:" HorizontalAlignment="Left" Margin="401,59,0,0" VerticalAlignment="Top" Height="23" Width="116"/>
 
     </Grid>
 </Window>
