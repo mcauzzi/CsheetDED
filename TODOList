@@ -6,3 +6,5 @@
 6-Permettere il salvataggio su DB del personaggio creato
 7-Aggiungere una form con le statistiche del personaggio
 8-Migliorare l'interfaccia
+9-Aggiungere una classe (o piu classi) Helper
+10-Rilevare le modifiche DB e in automatico caricare i nuovi dati
