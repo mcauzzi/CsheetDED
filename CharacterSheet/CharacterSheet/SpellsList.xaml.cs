@@ -49,7 +49,7 @@ namespace CharacterSheet
             HashSet<string> classSet = new HashSet<string>();
             try
             {
-                temp = SQLMan.GetData("SELECT LEVEL FROM SPELL");
+                temp = SQLMan.SelectQuery("SELECT LEVEL FROM SPELL");
                 foreach (DataRow row in temp.Rows)
                 {
                     MatchCollection matches = Regex.Matches(row["LEVEL"].ToString(), "[A-Za-z//]+");
@@ -73,7 +73,7 @@ namespace CharacterSheet
         {
             try
             {
-                SpellsGrid.DataContext = SQLMan.GetData(string.Format(loadQuery, NameFilterBox.Text, SchoolFilterBox.Text,
+                SpellsGrid.DataContext = SQLMan.SelectQuery(string.Format(loadQuery, NameFilterBox.Text, SchoolFilterBox.Text,
                                                             classComboBox.SelectedValue.ToString() +
                                                         (classComboBox.SelectedValue.ToString() != "-" ? $" {LevelMinFilterBox.Text}" : string.Empty)))
                                                 .DefaultView;

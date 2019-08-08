@@ -28,7 +28,7 @@ namespace CharacterSheet
 
         }
 
-        public DataTable GetData(string query)
+        public DataTable SelectQuery(string query)
         {
             DataTable dt = new DataTable();
             using (SqlCommand command = new SqlCommand(query, conn))
@@ -46,6 +46,50 @@ namespace CharacterSheet
                 }
             }
             return dt;
+        }
+
+        public DataTable ParameterizedSelectQuery(string query, List<QueryParameter> parsList)
+        {
+            DataTable dt = new DataTable();
+            SqlParameter par;
+            using (SqlCommand command = new SqlCommand(query, conn))
+            {
+                //TODO: Switch per ogni tipo?
+                foreach(var p in parsList)
+                {
+                    par = new SqlParameter();
+                    par.Value = p.Value;
+                    par.ParameterName = p.Name;
+                    command.Parameters.Add(par);
+                }
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    try
+                    {
+                        adapter.Fill(dt);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw ex;
+                    }
+                }
+            }
+            return dt;
+        }
+    }
+
+    public class QueryParameter
+    {
+        public string Name;
+        public object Value;
+        public Type ValueType;
+
+        public QueryParameter(string name, object value, Type valueType)
+        {
+            Name = name;
+            Value = value;
+            ValueType = valueType;
         }
     }
 }
