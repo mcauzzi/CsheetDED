@@ -1,10 +1,10 @@
-1-Dettagli spell dinamici (Passare una riga di una spell alla SpellDetail e questa crea i controlli durante l'esecuzione)
-2-Componente WPF per ogni slot d'armatura (con ennupla (tabella, colonna, tipo) per sapere quali dati prendere da DB)
-3-Migliorare i dati su DB
-4-Aggiungere la modifica dei dati sul DB: gestita livello utente DB, lasciare solo il permesso di select all'utente loginApp
-5-Aggiungere immagini varie per ogni slot armatura
-6-Permettere il salvataggio su DB del personaggio creato
-7-Aggiungere una form con le statistiche del personaggio
-8-Migliorare l'interfaccia
-9-Aggiungere una classe (o piu classi) Helper
-10-Rilevare le modifiche DB e in automatico caricare i nuovi dati
+[]1-Dettagli spell dinamici (Passare una riga di una spell alla SpellDetail e questa crea i controlli durante l'esecuzione)
+[]2-Componente WPF per ogni slot d'armatura (con ennupla (tabella, colonna, tipo) per sapere quali dati prendere da DB)
+[]3-Migliorare i dati su DB
+[]4-Aggiungere la modifica dei dati sul DB: gestita livello utente DB, lasciare solo il permesso di select all'utente loginApp
+[]5-Aggiungere immagini varie per ogni slot armatura
+[]6-Permettere il salvataggio su DB del personaggio creato
+[]7-Aggiungere una form con le statistiche del personaggio
+[]8-Migliorare l'interfaccia
+[]9-Aggiungere una classe (o piu classi) Helper
+[]10-Rilevare le modifiche DB e in automatico caricare i nuovi dati
