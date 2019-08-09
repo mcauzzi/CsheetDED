@@ -6,38 +6,10 @@
         xmlns:local="clr-namespace:CharacterSheet"
         mc:Ignorable="d"
         Title="SpellDetails" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="MainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Content="Name" Margin="10,7,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy" Content="Range" Margin="10,209,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy1" Content="Casting Time" Margin="10,178,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy2" Content="Components" Margin="10,147,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy3" Content="Level" Margin="10,116,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy4" Content="Descriptor" Margin="10,90,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy5" Content="SubSchool" Margin="10,64,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy6" Content="School" Margin="10,33,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy7" Content="Saving Throw" Margin="10,339,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy8" Content="Duration" Margin="10,313,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy9" Content="Effect" Margin="10,287,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy10" Content="Area" Margin="10,261,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy11" Content="Target" Margin="10,235,5,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy12" Content="Sorcerer Focus" Margin="10,194,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy13" Content="Verbal Components" Margin="10,168,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy14" Content="Wizard Focus" Margin="10,142,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy15" Content="Arcane Focus" Margin="10,116,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy16" Content="XP Cost" Margin="10,90,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy17" Content="Focus" Margin="10,62,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy18" Content="Arcane Material Components" Margin="10,36,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy19" Content="Material Components" Margin="10,10,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy20" Content="Spell Resistance" Margin="10,365,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        <Label x:Name="label_Copy21" Content="Sorcerer Focus" Margin="10,321,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy22" Content="Sorcerer Focus" Margin="10,295,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy23" Content="Sorcerer Focus" Margin="10,269,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy24" Content="Sorcerer Focus" Margin="10,243,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-        <Label x:Name="label_Copy25" Content="Sorcerer Focus" Margin="10,220,0,0" RenderTransformOrigin="-0.543,-0.211" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
     </Grid>
 </Window>

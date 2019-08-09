@@ -97,5 +97,20 @@ namespace CharacterSheet
         {
             LoadData();
         }
+
+        private void SpellsGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            DataRow selRow = (SpellsGrid.SelectedItem as DataRowView)?.Row;
+            var parsList = new List<QueryParameter>();
+            parsList.Add(new QueryParameter("spellName", selRow["NAME"], typeof(string)));
+            DataRow detailsRow = SQLMan.ParameterizedSelectQuery("SELECT * FROM spell WHERE name=@spellName",parsList).Rows[0];//TODO: Prendere solo i dettagli necessari
+
+            if (detailsRow == null)
+            {
+                return;
+            }
+            var form = new SpellDetails(detailsRow);
+            form.Show();
+        }
     }
 }
