@@ -1,4 +1,4 @@
-[]1-Dettagli spell dinamici (Passare una riga di una spell alla SpellDetail e questa crea i controlli durante l'esecuzione)
+[/]1-Dettagli spell dinamici (Passare una riga di una spell alla SpellDetail e questa crea i controlli durante l'esecuzione) DA FINIRE
 []2-Componente WPF per ogni slot d'armatura (con ennupla (tabella, colonna, tipo) per sapere quali dati prendere da DB)
 []3-Migliorare i dati su DB
 []4-Aggiungere la modifica dei dati sul DB: gestita livello utente DB, lasciare solo il permesso di select all'utente loginApp
