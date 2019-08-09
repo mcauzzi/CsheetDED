@@ -26,15 +26,21 @@ namespace CharacterSheet
         public MainWindow()
         {
             InitializeComponent();
-            this.Loaded += (x, y) =>
-              {
-                  var form = new LoginForm();
-                  form.Closed += (obj, args) =>
-                  {
-                      SQLMan = form.SQLMan;
-                  };
-                  form.Show();
-              };
+            this.IsEnabled = false;
+            var form = new LoginForm();
+            form.Closed += (obj, args) =>
+            {
+                SQLMan = form.SQLMan;
+            };
+            form.Show();
+            form.Topmost = true;
+            form.Focus();
+
+            form.Closed+=(x,y)=> {
+                this.IsEnabled = true;
+                this.Activate();
+                this.Focus();
+            };
         }
 
         private void SpellsButton_Click(object sender, RoutedEventArgs e)
