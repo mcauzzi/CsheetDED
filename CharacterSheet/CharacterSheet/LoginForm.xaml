@@ -8,8 +8,8 @@
         Title="LoginForm" Height="450" Width="800">
     <Grid KeyDown="Grid_KeyDown">
         <TextBox x:Name="UserNameBox" HorizontalAlignment="Left" Height="26" Margin="325,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="325,196,0,0" VerticalAlignment="Top" Width="172" Height="26"/>
-        <Label x:Name="label" Content="UserName:" HorizontalAlignment="Left" Margin="222,149,0,0" VerticalAlignment="Top" Width="98"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="325,196,0,0" VerticalAlignment="Top" Width="172" Height="26"/>
+        <Label x:Name="Label" Content="UserName:" HorizontalAlignment="Left" Margin="222,149,0,0" VerticalAlignment="Top" Width="98"/>
         <Label x:Name="PasswordLabel" Content="Password:" HorizontalAlignment="Left" Margin="222,196,0,0" VerticalAlignment="Top" Width="98"/>
         <Button x:Name="LoginButton" Content="Button" HorizontalAlignment="Left" Margin="325,248,0,0" VerticalAlignment="Top" Width="172" Click="Login_Click"/>
 
